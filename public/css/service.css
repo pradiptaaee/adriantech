@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-1: "Michroma",
+        serif;
+    --subfont: "Montserrat",
+        serif;
+    --subfont2: "Poppins",
+        serif;
+    --bg-birublack: #010417;
+    --bg-biru: rgb(51, 92, 255);
+}
+
+
+html, *{
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth ;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-section{
+    background: var(--bg-birublack);
+    padding-top: 7%;
+}
+
+.hero-section .container{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+.img-content{
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: -12px 15px 1px -2px #fae4c21c;
+}
+
+.img-content img{
+    position: relative;
+    /* left: -20%; */
+    width: 150%;
+    object-fit: cover;
+}
+
+.side-content{
+    padding: 0 50px;
+    width: 100%;
+    /* max-width: 300px; */
+}
+
+.side-content .head-text{
+    font-size: 60px;
+    font-family: var(--font-1);
+    color: aqua;
+}
+
+.service-content{
+    padding: 3rem;
+    background: #01020991;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px #565cff52;
+    flex-wrap: wrap;
+}
+
+.service-content .card {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(249, 92%, 58%);
+
+    margin: auto;
+    /* margin-top: 100px; */
+    /* padding-top: 130px; */
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 1rem; */
+    width: 19rem;
+    background-color: rgba(20, 20, 26, 0.197);
+    background-image: radial-gradient(at 88% 40%,
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%),
+        radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%),
+        radial-gradient(at 100% 99%, rgb(69, 36, 255) 0px, transparent 85%);
+
+    border-radius: 14px;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+    transition: .5s ease;
+}
+.service-content .card:hover{
+    transition: .5s ease;
+    transform: scale(1.03);
+    background-image: radial-gradient(at 88% 40%,
+                hsla(240, 15%, 9%, 1) 0px,
+                transparent 85%),
+            radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+            radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+            radial-gradient(at 0% 64%, rgb(45, 140, 255) 0px, transparent 100%),
+            radial-gradient(at 41% 94%, rgb(65, 198, 235) 0px, transparent 100%),
+            radial-gradient(at 100% 99%, rgb(54, 18, 255) 0px, transparent 100%);
+}
+
+.service-content .gambar {
+   width: 80px;
+    
+}
+
+.card h5{
+    color: #fff;
+}
+.card p{
+    color: #c1c1c1;
+
+}
+.card .btn{
+    background: transparent;
+    border: 1px solid #030e5b;
+    color: #fff;
+}

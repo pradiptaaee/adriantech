@@ -11,7 +11,7 @@
             <h1>Solusi Tepat Membuat Website Tanpa Ribet!</h1>
             <p>Bantu selesaikan tugas kuliah atau proyek pekerjaan Anda dengan website modern dan fungsional.</p>
         </div>
-        <div class="col">
+        <div class="col gap-4">
             <button data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" class="cta-bottom">
                 <a href="#">Konsultasi Gratis</a>
             </button>
@@ -116,7 +116,7 @@
 <div class="container-fluid contact">
     <div class="container">
         <section>
-            <h1>Ayo Bekerja Dengan Kami!</h1>
+            <h1 class="mb-4">Ayo Bekerja Dengan Kami!</h1>
             <form action="" class="form-contact">
                 <div class="mb-3 d-flex flex-column">
                     <label class="form-label">Nama</label>
@@ -136,20 +136,29 @@
                 </div>
             </form>
         </section>
-        <section>
-            <h3><a href="#"><i class="fa-brands fa-whatsapp"></i>   089-533-117-8068</a></h3>
-            <h3><a href="#"><i class="fa-regular fa-envelope"></i>  adriantech67@gmail.com</a></h3>
+        <section class="cta-call">
+            <h3>Atau Bisa Hubungi Kami Disini!</h3>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i> 089-533-117-8068</a>
+            <a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a>
         </section>
 
     </div>
 </div>
 
 <footer class="container-fluid text-center">
-    <section class="d-flex justify-content-between">
-        <img src="{{asset('asset/ADRIANTECH_LOGO2.png')}}" alt="" width="200">
-        <h1>sosial meida</h1>
-    </section>
-    <h3>&copy; 2025 PT. ADRIANTA ENTERPRIE. </h3>
+    <div class="container">
+        <section class="d-flex justify-content-between">
+            <img src="{{asset('asset/ADRIANTECH_LOGO2.png')}}" alt="" width="300">
+            <div class="side display-5 gap-5">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </section>
+        <p>&copy; 2025 PT. ADRIANTA ENTERPRISE. </p>
+        <p>Menyelesaikan Tugas Pembuatan Website Kamu</p>
+    </div>
 </footer>
+
 
 @endsection

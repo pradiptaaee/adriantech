@@ -27,11 +27,15 @@ body {
 .navbar {
     width: 100%;
     position: fixed;
-    /* background: #18064259; */
-    background: rgb(51, 92, 255);
     padding: 20px 7%;
     z-index: 99;
+
+}
+
+.navbar.scrolled {
+    background: #060b4259;
     backdrop-filter: blur(5px);
+    
 }
 
 #navbarNav .nav-link {
@@ -39,6 +43,11 @@ body {
     font-weight: 600;
     margin-left: 20px;
     color: #fff;
+}
+
+#navbarNav .nav-link:hover {
+    color: var(--bg-biru);
+    transition: ease .5s;
 }
 
 .banner {
@@ -82,6 +91,12 @@ body {
     background: linear-gradient(0deg, #180642 32%, #106DA8);
 }
 
+.cta-bottom:hover {
+    background: linear-gradient(0deg, #180642cd 32%, #106ea8ed);
+    box-shadow: 1px 2px 10px #106DA8;
+
+}
+
 .cta-bottom a {
     text-decoration: none;
     color: #fff;
@@ -119,7 +134,7 @@ body {
 }
 
 .row {
-
+    flex-wrap: wrap;
     padding-top: 30px;
 }
 
@@ -151,8 +166,8 @@ body {
     background-image: radial-gradient(at 88% 40%,
             hsla(240, 15%, 9%, 1) 0px,
             transparent 85%),
-        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0) 0px, transparent 85%),
-        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.201) 0px, transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
         radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%),
         radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%),
         radial-gradient(at 100% 99%, rgb(69, 36, 255) 0px, transparent 85%);
@@ -265,7 +280,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(transparent, rgba(193, 83, 83, 0.934));
     transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     z-index: 1;
 }
@@ -291,7 +306,16 @@ body {
 }
 
 .contact {
+    background-image: radial-gradient(at 88% 40%,
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+        /* radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%), */
+        /* radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%), */
+        radial-gradient(at 100% 99%, rgb(36, 80, 255) 0px, transparent 85%);
     padding: 7% 0;
+    border-bottom: 1px solid #444;
 }
 
 .contact .container {
@@ -301,10 +325,35 @@ body {
 
 }
 
+.cta-call {
+
+    padding: 50px 0;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-call h3 {
+    font-family: var(--font-1);
+    margin-bottom: 4rem;
+}
+
+.cta-call a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+.cta-call a:hover {
+    color: var(--bg-biru);
+}
+
 form input,
 textarea {
     color: white;
-    border: 2px solid #0755ff;
+    border: 2px solid var(--bg-biru);
     border-radius: 10px;
     padding: 10px 25px;
     background: transparent;
@@ -315,24 +364,34 @@ form input:active {
     box-shadow: 2px 2px 15px #0755ff inset;
 }
 
+footer {
+    background: #101219;
+    padding: 1rem 0;
+}
+
+footer section {
+    margin-bottom: 50px;
+}
+
+
+
 /* about */
 .about {
     padding: 0;
     margin: 0;
     width: 100%;
     padding-top: 7%;
-    background: #fff;
-    color: #000;
+
 }
 
 .about-header {
-    color: rgb(51, 92, 255);
+    /* color: rgb(51, 92, 255); */
     margin-bottom: 30px;
-    font-family: var(--subfont2);
+    font-family: var(--font-1);
 }
 
 .layout {
-    background: #f4f5fc;
+    background: var(--bg-biru);
     padding: 0;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -346,19 +405,20 @@ form input:active {
     background-size: cover;
     width: 100%;
     height: 500px;
-   
+
 }
 
-.layout .hero2{
+.layout .hero2 {
     width: 100%;
     margin: 0 auto;
     padding: 50px;
     position: relative;
-    
+
 }
-.layout .hero2:before{
+
+.layout .hero2:before {
     content: '';
-    background: #f4f5fc;
+    background: var(--bg-biru);
     position: absolute;
     left: -20%;
     top: 0;
@@ -367,44 +427,49 @@ form input:active {
     height: 700px;
 }
 
-.layout .hero2 h3{
+.layout .hero2 h3 {
 
     position: relative;
 }
-.layout .hero2 p{
-color: #000;
+
+.layout .hero2 p {
+    color: #000;
     position: relative;
     font-family: var(--subfont);
 }
 
-.sub-content{
-    /* background: rgb(51, 92, 255); */
-    margin: 50px auto;
+.sub-content {
+    background: rgb(51, 92, 255);
+    margin-bottom:50px;
+    margin-top: 30px;
     border-bottom: 2px solid var(--bg-biru);
 }
 
 
-.sub-content p, .sub-content i{
+.sub-content p,
+.sub-content i {
     color: #000;
 }
-.sub-content p{
+
+.sub-content p {
     width: 60%;
     color: #000;
     margin: 0;
     font-family: var(--subfont);
 }
 
-.about .layanan{
-    background: #f4f5fc;
+.about .layanan {
+    border-top: 2px solid #444;
     padding: 50px 0;
 }
 
-.about .contact{
+.about .contact {
     padding: 50px 0;
     background: var(--bg-biru);
-    
+
 }
-.about .contact .container{
+
+.about .contact .container {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
 }

@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>adriantech.com</title>
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css')}}">
-    <!-- <link rel="stylesheet" href="{{ asset('css/layout.css')}}"> -->
+    <link rel="stylesheet" href="{{ asset('css/layout.css')}}">
     <!-- AOS moving -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="..">
     <link href="https://bootswatch.com/5/flatly/bootstrap.min.css" rel="stylesheet">
 
+    <script src="{{asset('js/layout.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <!-- jquery -->
     <script src="{{ asset('js/jquery-3.7.1.min.js')}}"></script>
@@ -33,7 +34,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="{{asset('asset/ADRIANTECH_LOGO2.png')}}" width="250" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +49,7 @@
                         <a class="nav-link" href="{{route('about')}}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="{{route('service.index')}}">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portofolio</a>
