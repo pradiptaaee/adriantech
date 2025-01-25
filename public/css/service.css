@@ -12,27 +12,35 @@
 }
 
 
-html, *{
+html,
+* {
     padding: 0;
     margin: 0;
-    scroll-behavior:smooth ;
+    scroll-behavior: smooth;
     text-decoration: none;
     color: #fff;
 }
 
-.hero-section{
+.hero-section {
     background: var(--bg-birublack);
+    background-image: 
+        /* radial-gradient(at 88% 40%,hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%), */
+        radial-gradient(at 0% 99%, rgba(38, 132, 247, 0.492) 0px, transparent 25%),
+        radial-gradient(at 87% 100%, rgba(29, 195, 251, 0.244) 0px, transparent 20%),
+        radial-gradient(at 100% 0, rgba(36, 80, 255, 0.377) 0px, transparent 30%);
     padding-top: 7%;
 }
 
-.hero-section .container{
+.hero-section .container {
     display: flex;
     align-items: end;
     justify-content: space-between;
     margin-bottom: 7%;
 }
 
-.img-content{
+.img-content {
     width: 500px;
     height: 350px;
     overflow: hidden;
@@ -41,30 +49,31 @@ html, *{
     box-shadow: -12px 15px 1px -2px #fae4c21c;
 }
 
-.img-content img{
+.img-content img {
     position: relative;
     /* left: -20%; */
     width: 150%;
     object-fit: cover;
 }
 
-.side-content{
+.side-content {
     padding: 0 50px;
     width: 100%;
     /* max-width: 300px; */
 }
 
-.side-content .head-text{
+.side-content .head-text {
     font-size: 60px;
     font-family: var(--font-1);
     color: aqua;
 }
 
-.service-content{
-    padding: 3rem;
-    background: #01020991;
-    border-radius: 16px;
-    box-shadow: 1px 1px 10px #565cff52;
+.service-content {
+    padding: 3rem 0;
+    /* background: #01020991; */
+    /* border-radius: 16px; */
+    /* box-shadow: 1px 1px 10px #565cff52; */
+    border-top: 1px solid #c1c1c1;
     flex-wrap: wrap;
 }
 
@@ -99,33 +108,56 @@ html, *{
     box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
     transition: .5s ease;
 }
-.service-content .card:hover{
+
+.service-content .card:hover {
     transition: .5s ease;
     transform: scale(1.03);
     background-image: radial-gradient(at 88% 40%,
-                hsla(240, 15%, 9%, 1) 0px,
-                transparent 85%),
-            radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
-            radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
-            radial-gradient(at 0% 64%, rgb(45, 140, 255) 0px, transparent 100%),
-            radial-gradient(at 41% 94%, rgb(65, 198, 235) 0px, transparent 100%),
-            radial-gradient(at 100% 99%, rgb(54, 18, 255) 0px, transparent 100%);
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, rgb(45, 140, 255) 0px, transparent 100%),
+        radial-gradient(at 41% 94%, rgb(65, 198, 235) 0px, transparent 100%),
+        radial-gradient(at 100% 99%, rgb(54, 18, 255) 0px, transparent 100%);
 }
 
 .service-content .gambar {
-   width: 80px;
-    
+    width: 80px;
+
 }
 
-.card h5{
+.card h5 {
     color: #fff;
 }
-.card p{
+
+.card p {
     color: #c1c1c1;
 
 }
-.card .btn{
+
+.card .btn {
     background: transparent;
     border: 1px solid #030e5b;
     color: #fff;
+    transform: .5s ease;
 }
+.card .btn:hover{
+    background: #083be280;
+    border: none;
+}
+
+.hero-section .contact{
+    background: transparent;
+    padding-top: 0;
+    display: block;
+}
+.hero-section .contact .col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-section .contact .col form{
+    width: 500px;
+}
+

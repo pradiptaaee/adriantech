@@ -35,5 +35,35 @@
         @endforeach
 
     </div>
+
+    <div class="container contact">
+        <h3 class="mb-4">Punya ide? Butuh diskusi? Langsung aja kontak kami lewat WhatsApp, email, atau klik tombol chat!</h3>
+        <div class="col">
+            <section>
+                <form action="" class="form-contact">
+                    <div class="mb-3 d-flex flex-column">
+                        <label class="form-label">Nama</label>
+                        <input type="text" id="nama" placeholder="Nama Anda">
+                    </div>
+                    <div class="mb-3 d-flex flex-column">
+                        <label class="form-label">No Hp</label>
+                        <input type="email" id="nomor" placeholder="Nomor aktif/WA">
+                    </div>
+                    <div class="mb-3 d-flex flex-column">
+                        <label class="form-label">Email</label>
+                        <input type="number" id="email" placeholder="nama@example.com">
+                    </div>
+                    <div class="mb-3 d-flex flex-column">
+                        <label class="form-label">Deskripsi</label>
+                        <textarea id="deskripsi" rows="3" placeholder="ceritkan website impian kamu"></textarea>
+                    </div>
+                </form>
+            </section>
+            <section class="cta-call">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> 089-533-117-8068</a>
+                <a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a>
+            </section>
+        </div>
+    </div>
 </div>
 @endsection
