@@ -23,15 +23,17 @@
 
         @foreach ($services as $service)
         <div class="col">
-            <div class="card" style="width: 18rem; height:19rem;">
+            <div class="card" style="width: 18rem;">
                 <img src="{{asset('asset/web.png')}}" class="card-img-top gambar" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{$service -> nama_service}}</h5>
                     <p class="card-text">{{$service->deskripsi}}</p>
+                    <p>({{$service->alat}})</p>
                 </div>
                 <a href="#" class="btn  m-2">Pesan Skrng</a>
             </div>
         </div>
+
         @endforeach
 
     </div>
@@ -60,8 +62,21 @@
                 </form>
             </section>
             <section class="cta-call">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i> 089-533-117-8068</a>
-                <a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a>
+                <h3>Informasi Kontak</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i> +62 895-331-178-068</a></li>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-clock"></i> Senin - Sabtu: 09:00 - 21:00 WITA </a></li>
+                </ul>
+                <h3>Ikuti Kami</h3>
+                <ul class="d-flex gap-3">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    
+                </ul>
+
             </section>
         </div>
     </div>

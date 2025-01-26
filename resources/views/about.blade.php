@@ -6,7 +6,7 @@
 </head>
 
 <div class="container-fluid about">
-    <section class="container layout">
+    <section class="container-fluid layout">
         <div class="hero">
 
         </div>
@@ -16,29 +16,31 @@
             <p>Adriantech lahir dari ide sederhana: membantu teman-teman mahasiswa dan profesional yang butuh website tanpa ribet. Dengan pengalaman di dunia pengembangan web, kami nggak cuma bikin website, tapi juga bikin kamu puas!</p>
         </div>
     </section>
-    <section class="container py-4 sub-content">
-        <div class="col about-header">
-            <h3>Kami Hadir Dengan Misi</h3>
-        </div>
+    <section class="container-fluid py-4 sub-content">
+        <div class="container">
+            <div class="col about-header text-center">
+                <h3>Kami Hadir Dengan Misi</h3>
+            </div>
 
-        <div class="col d-flex justify-content-between my-4">
-            <div class=" d-flex align-items-center gap-1">
-                <div class="display-3">
-                    <i class="fa-solid fa-business-time"></i>
+            <div class="col d-flex justify-content-between my-4">
+                <div class=" d-flex align-items-center gap-1">
+                    <div class="display-3">
+                        <i class="fa-solid fa-business-time"></i>
+                    </div>
+                    <p>Memberikan layanan pembuatan website yang mudah, cepat, dan terjangkau</p>
                 </div>
-                <p>Memberikan layanan pembuatan website yang mudah, cepat, dan terjangkau</p>
-            </div>
-            <div class=" d-flex align-items-center gap-1">
-                <div class="display-3">
-                    <i class="fa-solid fa-laptop-code"></i>
+                <div class=" d-flex align-items-center gap-1">
+                    <div class="display-3">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <p> Bikin hidup kamu lebih gampang! Nggak perlu pusing soal coding atau desain, serahin aja ke kami</p>
                 </div>
-                <p> Bikin hidup kamu lebih gampang! Nggak perlu pusing soal coding atau desain, serahin aja ke kami</p>
-            </div>
-            <div class=" d-flex align-items-center gap-1">
-                <div class="display-3">
-                    <i class="fa-solid fa-ear-listen"></i>
+                <div class=" d-flex align-items-center gap-1">
+                    <div class="display-3">
+                        <i class="fa-solid fa-ear-listen"></i>
+                    </div>
+                    <p>Kami mendengarkan dan memastikan hasil sesuai ekspektasi.</p>
                 </div>
-                <p>Kami mendengarkan dan memastikan hasil sesuai ekspektasi.</p>
             </div>
         </div>
     </section>
@@ -83,16 +85,50 @@
         </div>
     </section>
 
-    <section class="container-fluid contact">
+    <div class="container-fluid contact">
         <div class="container">
-            <h4>Punya ide? Butuh diskusi? Langsung aja kontak kami lewat WhatsApp, email, atau klik tombol chat. Kami siap bantuin kamu kapan aja!</h4>
+            <h1 class="mb-4">Punya ide? Butuh diskusi? Langsung aja kontak kami lewat WhatsApp, email, atau klik tombol chat!</h1>
             <div class="col">
-                <button class="cta-bottom">
-                    <a href="#">Konsultasi Gratis</a>
-                </button>
+                <section>
+                    <form action="" class="form-contact">
+                        <div class="mb-3 d-flex flex-column">
+                            <label class="form-label">Nama</label>
+                            <input type="text" id="nama" placeholder="Nama Anda">
+                        </div>
+                        <div class="mb-3 d-flex flex-column">
+                            <label class="form-label">No Hp</label>
+                            <input type="email" id="nomor" placeholder="Nomor aktif/WA">
+                        </div>
+                        <div class="mb-3 d-flex flex-column">
+                            <label class="form-label">Email</label>
+                            <input type="number" id="email" placeholder="nama@example.com">
+                        </div>
+                        <div class="mb-3 d-flex flex-column">
+                            <label class="form-label">Deskripsi</label>
+                            <textarea id="deskripsi" rows="3" placeholder="ceritkan website impian kamu"></textarea>
+                        </div>
+                    </form>
+                </section>
+                <section class="cta-call">
+                    <h3>Informasi Kontak</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> +62 895-331-178-068</a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-clock"></i> Senin - Sabtu: 09:00 - 21:00 WITA </a></li>
+                    </ul>
+                    <h3>Ikuti Kami</h3>
+                    <ul class="d-flex gap-3">
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+                    </ul>
+                </section>
             </div>
         </div>
-    </section>
+
+    </div>
 </div>
 
 @endsection

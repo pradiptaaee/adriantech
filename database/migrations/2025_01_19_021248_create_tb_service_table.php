@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nama_service', 255);
             $table->text('deskripsi');
             $table->integer('harga');
+            $table->string('alat');
             $table->timestamps();
         });
     }

@@ -44,8 +44,8 @@
                     <div class="card-body px-4">
                         <h5 class="card-title text-light">Pembuatan Landing Page</h5>
                         <p class="card-text">Desain landing page modern dan responsif untuk memperkenalkan produk, layanan, atau portofolio Anda dengan profesional.</p>
-                        <a href="#" class="btn btn-primary">Pesan Skrng</a>
                     </div>
+                    <a href="#" class="btn m-3">Pesan Skrng</a>
                 </div>
             </div>
             <div class="col" data-aos="fade-in">
@@ -54,8 +54,8 @@
                     <div class="card-body px-4">
                         <h5 class="card-title text-light">Website CRUD</h5>
                         <p class="card-text">Bangun website dengan fitur manajemen data sederhana yang sesuai untuk tugas kuliah atau proyek kerja Anda.</p>
-                        <a href="#" class="btn btn-primary">Pesan Skrng</a>
                     </div>
+                    <a href="#" class="btn m-3">Pesan Skrng</a>
                 </div>
             </div>
             <div class="col" data-aos="fade-left">
@@ -64,16 +64,16 @@
                     <div class="card-body px-4">
                         <h5 class="card-title text-light">Website Undangan Digital</h5>
                         <p class="card-text">Buat undangan pernikahan atau acara spesial Anda dengan desain elegan dan link yang mudah dibagikan.</p>
-                        <a href="#" class="btn btn-primary">Pesan Skrng</a>
                     </div>
+                    <a href="#" class="btn m-3">Pesan Skrng</a>
                 </div>
             </div>
         </div>
 
         <div class="col mt-4 col-bottom">
-            <a href="#" class="fs-5">Lihat Semua Layanan</a>
+            <a href="{{route('service.index')}}" class="fs-5">Lihat Semua Layanan</a>
             <button class="cta-bottom">
-                <a href="#">Hubungi kami</a>
+                <a href="https//wa.me">Hubungi kami</a>
             </button>
         </div>
     </div>
@@ -85,7 +85,11 @@
         <div class="text-header">
             <h2>Portofolio</h2>
             <p>Saat ini bemum ada Project yg kami buat.</p>
+            <div class="col">
+                <button><a href="#">Mulai Project Anda -></a></button>
+            </div>
         </div>
+
         <!-- <div class="card">
             <div class="card-content">
                 <p class="card-title">Card hover effect
@@ -113,6 +117,41 @@
     </div>
 </div>
 
+<div class="container-fluid testimoni">
+    <div class="container">
+        <div class="text-header">
+            <h2>Testimoni</h2>
+            <p>Dengarkan lansung Kata Mereka</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body px-4">
+                        <h5 class="card-title text-light">Pembuatan Landing Page</h5>
+                        <p class="card-text">Desain landing page modern dan responsif untuk memperkenalkan produk, layanan, atau portofolio Anda dengan profesional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body px-4">
+                        <h5 class="card-title text-light">Pembuatan Landing Page</h5>
+                        <p class="card-text">Desain landing page modern dan responsif untuk memperkenalkan produk, layanan, atau portofolio Anda dengan profesional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body px-4">
+                        <h5 class="card-title text-light">Pembuatan Landing Page</h5>
+                        <p class="card-text">Desain landing page modern dan responsif untuk memperkenalkan produk, layanan, atau portofolio Anda dengan profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid contact">
     <div class="container">
         <h1 class="mb-4">Punya ide? Butuh diskusi? Langsung aja kontak kami lewat WhatsApp, email, atau klik tombol chat!</h1>
@@ -135,12 +174,26 @@
                         <label class="form-label">Deskripsi</label>
                         <textarea id="deskripsi" rows="3" placeholder="ceritkan website impian kamu"></textarea>
                     </div>
+                    <div class="mb-3">
+                        <div class="btn btn-info">Kirim Pesan</div>
+                    </div>
                 </form>
             </section>
             <section class="cta-call">
-                <h3>Atau Bisa Hubungi Kami Disini!</h3>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i> 089-533-117-8068</a>
-                <a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a>
+                <h3>Informasi Kontak</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i> +62 895-331-178-068</a></li>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> adriantech67@gmail.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-clock"></i> Senin - Sabtu: 09:00 - 21:00 WITA </a></li>
+                </ul>
+                <h3>Ikuti Kami</h3>
+                <ul class="d-flex gap-3">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+                </ul>
             </section>
         </div>
     </div>
