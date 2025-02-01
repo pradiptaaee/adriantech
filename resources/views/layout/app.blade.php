@@ -46,16 +46,16 @@
                         <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('about')}}">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('service.index')}}">Services</a>
+                        <a class="nav-link" href="#layanan">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portofolio</a>
+                        <a class="nav-link" href="#portofolio">Portofolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>

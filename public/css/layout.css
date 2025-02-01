@@ -18,6 +18,7 @@ html,
     text-decoration: none;
     padding: 0;
     margin: 0;
+    
 }
 
 body {
@@ -35,7 +36,7 @@ body {
 .navbar.scrolled {
     background: #060b4259;
     backdrop-filter: blur(5px);
-    
+
 }
 
 #navbarNav .nav-link {
@@ -71,7 +72,7 @@ body {
     width: 100%;
     max-width: 600px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .wrapper h1 {
@@ -84,340 +85,46 @@ body {
     font-family: var(--subfont);
 }
 
+.banner .content .col .cta-bottom-right {
+    transition: .3s ease;
+    border: none;
+    border-radius: 34px;
+    padding: 10px 40px;
+    background: transparent;
+    border: 2px solid #106DA8;
+    transition: ease .3s;
+}
+
+.banner .content .col .cta-bottom-right:hover {
+    
+    border: 2px solid #0189de;
+}
+
 .cta-bottom {
     transition: .3s ease;
     border: none;
     border-radius: 34px;
     padding: 10px 40px;
+    transition: ease .3s;
     background: linear-gradient(0deg, #180642 32%, #106DA8);
 }
 
 .cta-bottom:hover {
     background: linear-gradient(0deg, #180642cd 32%, #106ea8ed);
-    box-shadow: 1px 2px 10px -2px #106ea8ae;
+    box-shadow: 1px 2px 15px -2px #000000ae;
 
 }
 
-.cta-bottom a {
+.cta-bottom a,
+.cta-bottom-right a {
     text-decoration: none;
     color: #fff;
     font-family: var(--font-1);
+    font-size: 12px;
 }
-
-.keunggulan {
-    text-align: center;
-    padding: 50px 0;
-    background: #010007;
-    box-shadow: 1px 4px 10px #106ea868;
-}
-
-.keunggulan h2 {
-    font-family: var(--font-1);
-}
-
-.keunggulan p {
-    width: 300px;
-    text-align: center;
-}
-
-.layanan {
-    padding-top: 7%;
-    /* height: 100vh; */
-    /* background: rgb(201, 86, 86); */
-}
-
-.text-header h2 {
-    font-family: var(--font-1);
-}
-
-.text-header p {
-    font-family: var(--subfont);
-}
-
-.row {
-    flex-wrap: wrap;
-    padding-top: 30px;
-}
-
-/* .row .card{
-    background: #e4e4e443;
-    margin: auto;
-    margin-top: 100px;
-    padding-top: 130px;
-    border-radius: 15px;
-} */
-.row .card {
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(240, 15%, 9%);
-    --paragraph: hsl(0, 0%, 83%);
-    --line: hsl(240, 9%, 17%);
-    --primary: hsl(249, 92%, 58%);
-
-    margin: auto;
-    margin-top: 100px;
-    padding-top: 130px;
-    /* position: relative; */
-
-    display: flex;
-    flex-direction: column;
-
-    /* padding: 1rem; */
-    width: 19rem;
-    background-color: rgba(20, 20, 26, 0.197);
-    background-image: radial-gradient(at 88% 40%,
-            hsla(240, 15%, 9%, 1) 0px,
-            transparent 85%),
-        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
-        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
-        radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%),
-        radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%),
-        radial-gradient(at 100% 99%, rgb(69, 36, 255) 0px, transparent 85%);
-
-    border-radius: 14px;
-    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
-}
-.row .card:hover {
-    transition: .5s ease;
-    transform: scale(1.03);
-    background-image: radial-gradient(at 88% 40%,
-            hsla(240, 15%, 9%, 1) 0px,
-            transparent 85%),
-        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
-        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
-        radial-gradient(at 0% 64%, rgb(45, 140, 255) 0px, transparent 100%),
-        radial-gradient(at 41% 94%, rgb(65, 198, 235) 0px, transparent 100%),
-        radial-gradient(at 100% 99%, rgb(54, 18, 255) 0px, transparent 100%);
-}
-
-
-.row .gambar {
-    position: absolute;
-    width: 250px;
-    transform: translateX(30%);
-    z-index: 2;
-}
-
-.card .btn {
-    background: transparent;
-    border: 1px solid #030e5b;
-    color: #fff;
-    transform: .5s ease;
-}
-
-.card .btn:hover {
-    background: #083be280;
-    border: none;
-}
-
-.col-bottom {
-    padding: 50px 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.col-bottom a {
-    text-decoration: none;
-}
-
-.portofolio {
-    padding-top: 20%;
-    padding-bottom: 7%;
-    background: rgb(51, 92, 255);
-
-    position: relative;
-}
-
-.portofolio::after {
-    content: '';
-    position: absolute;
-    background: url(../asset/wave-haikei.svg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    top: 0;
-    left: 0;
-    filter: drop-shadow(0px 25px 10px #1d29ca);
-}
-
-.portofolio .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-.portofolio
-
-/* From Uiverse.io by gharsh11032000 */
-.card {
-    margin: auto;
-    width: 600px;
-    height: 400px;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    border-radius: 8px;
-    color: white;
-    overflow: hidden;
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    cursor: pointer;
-}
-
-.portofolio .card .card-content {
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-}
-
-.portofolio .card .card-content .card-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: inherit;
-    text-transform: uppercase;
-}
-
-.portofolio .card .card-content .card-para {
-    color: inherit;
-    opacity: 0.8;
-    font-size: 14px;
-}
-
-.portofolio .card:hover {
-    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.portofolio .card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent, rgba(193, 83, 83, 0.934));
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    z-index: 1;
-}
-
-.portofolio .card:hover:before {
-    transform: translateX(-100%);
-}
-
-.portofolio .card:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    z-index: 1;
-}
-
-.portofolio .card:hover:after {
-    transform: translateX(100%);
-}
-
-.contact {
-    background-image: radial-gradient(at 88% 40%,
-            hsla(240, 15%, 9%, 1) 0px,
-            transparent 85%),
-        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
-        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
-        /* radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%), */
-        /* radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%), */
-        radial-gradient(at 100% 99%, rgb(36, 80, 255) 0px, transparent 85%);
-    padding: 7% 0;
-    border-bottom: 1px solid #444;
-}
-
-.contact .container h1{
-    
-
-}
-.contact .container .col{
-    display: flex;
-    align-items: center;
-    justify-content: space-between ;
-}
-.contact .container .col form{
-    width: 500px;
-}
-.cta-call {
-   gap: 5px;
-    padding: 50px 0;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
-}
-
-.cta-call h3 {
-    font-family: var(--font-1);
-    
-}
-
-.cta-call ul li{
-    list-style-type: none;
-}
-
-.cta-call a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-
-}
-
-.cta-call a:hover {
-    color: var(--bg-biru);
-}
-
-form input,
-textarea {
-    color: white;
-    border: 2px solid var(--bg-biru);
-    border-radius: 10px;
-    padding: 10px 25px;
-    background: transparent;
-
-}
-
-form input:active {
-    box-shadow: 2px 2px 15px #0755ff inset;
-}
-
-footer {
-    background: #101219;
-    padding: 1rem 0;
-}
-
-footer section {
-    margin-bottom: 50px;
-}
-
-
 
 /* about */
-.about {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    padding-top: 6%;
 
-}
 
 .about-header {
     /* color: rgb(51, 92, 255); */
@@ -439,7 +146,7 @@ footer section {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 400px;
 
 }
 
@@ -471,11 +178,409 @@ footer section {
     color: #000;
     position: relative;
     font-family: var(--subfont);
+    max-width: 400px;
+}
+
+.keunggulan {
+    padding: 50px 0;
+    background: #00050f;
+    /* background: var(--bg-biru); */
+    box-shadow: 1px 4px 10px #106ea868;
+}
+
+.keunggulan .container .row{
+    display: flex;
+    justify-content: center;
+}
+.keunggulan .container .row .col{
+    margin: auto;
+    justify-content: center;
+}
+.keunggulan .container .row .col p {
+    font-size: 13px;
+    font-family: var(--subfont);
+    font-weight: 300;
+    max-width: 300px;
+}
+
+
+.layanan {
+    padding-top: 7%;
+    /* height: 100vh; */
+    /* background: rgb(201, 86, 86); */
+}
+
+.text-header h2 {
+    font-family: var(--font-1);
+}
+
+.text-header p {
+    font-family: var(--subfont);
+}
+
+.row {
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+/* .row .card{
+    background: #e4e4e443;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 130px;
+    border-radius: 15px;
+} */
+.layanan .row .card {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(249, 92%, 58%);
+
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 130px;
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 1rem; */
+    width: 19rem;
+    background-color: rgba(20, 20, 26, 0.197);
+    background-image: radial-gradient(at 88% 40%,
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%),
+        radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%),
+        radial-gradient(at 100% 99%, rgb(69, 36, 255) 0px, transparent 85%);
+
+    border-radius: 14px;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+    transition: .5s ease;
+}
+
+.layanan .row .card:hover {
+
+    transform: scale(1.03);
+    background-image: radial-gradient(at 88% 40%,
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, rgb(45, 140, 255) 0px, transparent 100%),
+        radial-gradient(at 41% 94%, rgb(65, 198, 235) 0px, transparent 100%),
+        radial-gradient(at 100% 99%, rgb(54, 18, 255) 0px, transparent 100%);
+}
+
+.card-body h5 {
+    color: #fff;
+    font-family: var(--font-1);
+}
+
+.card-body p {
+    color: #fff;
+    font-family: var(--subfont);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+.layanan .row .gambar {
+    position: absolute;
+    width: 250px;
+    transform: translateX(30%);
+    z-index: 2;
+}
+
+.card .btn {
+    background: transparent;
+    border: 1px solid #030e5b;
+    color: #fff;
+    transform: .5s ease;
+}
+
+.card .btn:hover {
+    background: #083be280;
+    border: none;
+}
+
+.col-bottom {
+    padding: 50px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-bottom .service-link {
+    text-decoration: none;
+    color: #106DA8;
+}
+
+.portofolio {
+    padding-top: 10%;
+    padding-bottom: 50px ;
+    background: rgb(51, 92, 255);
+
+    position: relative;
+}
+
+.portofolio::after {
+    content: '';
+    position: absolute;
+    background: url(../asset/wave-haikei.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(0px 25px 10px #1d29ca);
+}
+
+.portofolio .container {
+    padding: 2rem;
+}
+
+.portofolio .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 13px;
+    margin: 3rem auto;
+}
+
+/* From Uiverse.io by gharsh11032000 */
+.portofolio .row .card {
+    background: #06042962;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    overflow: hidden;
+
+    box-shadow: 1px 3px 10px #26262639;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.portofolio .row .card:hover {
+    box-shadow: 1px 3px 15px #26262677;
+}
+
+.portofolio .row .gambar {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
+
+.portofolio .row .gambar img {
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
+
+.portofolio .card .card-content {
+    padding: 10px;
+    /* position: relative; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.portofolio .card .card-content .card-title {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.portofolio .card .card-content .card-para {
+
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.portofolio .btn-project{
+    background: #1146b0;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    align-self: center;
+    transition: .3s ease;
+}
+.portofolio .btn-project:hover{
+    /* background: #194fbc; */
+    box-shadow: 1px 3px 7px #0000003e;
+}
+.portofolio .btn-project a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Efek gelap transparan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Default: tidak terlihat */
+    transition: opacity 0.5s ease;
+    /* Efek transisi halus */
+}
+
+.overlay-text {
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.overlay-text:hover {
+    background-color: #218838;
+}
+
+/* Efek Hover */
+.gambar.proyek:hover .overlay {
+    opacity: 1;
+    /* Muncul saat hover */
+}
+
+
+.contact {
+    background-image: radial-gradient(at 88% 40%,
+            hsla(240, 15%, 9%, 1) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgba(20, 20, 26, 0.973) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgba(20, 20, 26, 0.907) 0px, transparent 85%),
+        /* radial-gradient(at 0% 64%, rgb(38, 132, 247) 0px, transparent 85%), */
+        /* radial-gradient(at 41% 94%, rgb(14, 175, 220) 0px, transparent 85%), */
+        radial-gradient(at 100% 99%, rgb(36, 80, 255) 0px, transparent 85%);
+    padding: 7% 0;
+    border-bottom: 1px solid #444;
+}
+
+.contact .container h1 {}
+
+.contact .container .col {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.contact .container .col form {
+    width: 500px;
+}
+
+.cta-call {
+    gap: 5px;
+    /* padding: 50px 0; */
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+}
+
+.cta-call h3 {
+    font-family: var(--font-1);
+
+}
+
+.cta-call ul li {
+    list-style-type: none;
+    line-height: 2.5;
+    font-family: var(--subfont);
+    font-weight: 300;
+}
+
+.cta-call a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+.cta-call a i:hover {
+    color: var(--bg-biru);
+}
+
+form input,
+textarea {
+    color: white;
+    border: 2px solid var(--bg-biru);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+
+}
+
+form input:active {
+    box-shadow: 2px 2px 15px #0755ff inset;
+}
+
+footer {
+    background: #101219;
+    padding: 1rem 0;
+    padding-top: 3rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+    margin-bottom: 2rem;
+}
+
+footer section {
+    margin-bottom: 50px;
+}
+
+footer section .col p {
+    text-decoration: none;
+    font-family: var(--subfont);
+    color: #c0c0c0;
+}
+
+footer section .col h3 {
+    font-family: var(--subfont);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+footer section .col .side a {
+    font-size: 2rem;
+}
+
+footer section .col li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+footer section .col li a {
+    text-decoration: none;
+    font-family: var(--subfont);
+    color: #c0c0c0;
 }
 
 .sub-content {
     background: rgb(51, 92, 255);
-    margin-bottom:50px;
+    margin-bottom: 50px;
     margin-top: 3px;
     border-bottom: 2px solid var(--bg-biru);
 }

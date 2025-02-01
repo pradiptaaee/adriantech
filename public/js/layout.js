@@ -6,3 +6,10 @@ document.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 });
+
+document.getElementById('overlayText').addEventListener('click', function (event) {
+    event.preventDefault();
+    alert('Menuju ke detail proyek!');
+    // Bisa diganti untuk redirect halaman
+    // window.location.href = 'link-ke-detail-proyek.html';
+});
