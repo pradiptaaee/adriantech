@@ -37,8 +37,8 @@
     <div class="container">
         <div class="text-header text-center">
             <h2 data-aos="zoom-out-up">Misi Kami</h2>
-
         </div>
+
         <div class="row">
             <div class="col d-flex align-items-center gap-2" data-aos="zoom-in-up">
                 <div class="display-4">
@@ -71,8 +71,9 @@
         <div class="row">
             @if($services->count() > 0)
             <div class="col" data-aos="zoom-out-down">
-                <!-- <img src="{{ asset('asset/web.png') }}" class="card-img-top gambar" alt="..."> -->
-                <div class="card" style="width: 19rem;">
+                <div class="card" style="width: 19rem; ">
+
+                    <img src="{{ asset('asset/landing-page.png') }}" class="img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $services[0]->nama_service }}</h5>
                         <p class="card-text">{{ $services[0]->deskripsi }}</p>
@@ -83,8 +84,8 @@
             </div>
 
             <div class="col" data-aos="zoom-out-down" data-aos-duration="600">
-                <!-- <img src="{{ asset('asset/web.png') }}" class="card-img-top gambar" alt="..."> -->
-                <div class="card" style="width: 19rem;">
+                <div class="card" style="width: 19rem; ">
+                    <img src="{{ asset('asset/database.png') }}" class="img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $services[1]->nama_service }}</h5>
                         <p class="card-text">{{ $services[1]->deskripsi }}</p>
@@ -95,8 +96,8 @@
             </div>
 
             <div class="col" data-aos="zoom-out-down" data-aos-duration="900">
-                <!-- <img src="{{ asset('asset/web.png') }}" class="card-img-top gambar" alt="..."> -->
-                <div class="card" style="width: 19rem;">
+                <div class="card" style="width: 19rem; ">
+                    <img src="{{ asset('asset/greeting.png') }}" class="img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $services[2]->nama_service }}</h5>
                         <p class="card-text">{{ $services[2]->deskripsi }}</p>
@@ -107,8 +108,8 @@
             </div>
 
             <div class="col" data-aos="zoom-out-down" data-aos-duration="1100">
-                <!-- <img src="{{ asset('asset/web.png') }}" class="card-img-top gambar" alt="..."> -->
-                <div class="card" style="width: 19rem;">
+                <div class="card" style="width: 19rem; ">
+                    <img src="{{asset('asset/design-web.png')}}" alt="web-design" class="img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $services[3]->nama_service }}</h5>
                         <p class="card-text">{{ $services[3]->deskripsi }}</p>
@@ -250,31 +251,31 @@
 
 <div class="container-fluid contact" id="contact">
     <div class="container">
-        <h2 class="mb-4" data-aos="zoom-in">Punya ide? Butuh diskusi? Langsung aja kontak kami lewat WhatsApp, email, atau klik tombol chat!</h2>
+        <h2 data-aos="zoom-in">Punya ide? Butuh diskusi? Langsung aja kontak kami lewat WhatsApp, email, atau klik tombol chat!</h2>
+
         <div class="col">
-            <section>
-                <form action="" class="form-contact" data-aos="fade-right">
-                    <div class="mb-3 d-flex flex-column">
-                        <label class="form-label">Nama</label>
-                        <input type="text" id="nama" placeholder="Nama Anda">
-                    </div>
-                    <div class="mb-3 d-flex flex-column">
-                        <label class="form-label">No Hp</label>
-                        <input type="email" id="nomor" placeholder="Nomor aktif/WA">
-                    </div>
-                    <div class="mb-3 d-flex flex-column">
-                        <label class="form-label">Email</label>
-                        <input type="number" id="email" placeholder="nama@example.com">
-                    </div>
-                    <div class="mb-3 d-flex flex-column">
-                        <label class="form-label">Pesan</label>
-                        <textarea id="deskripsi" rows="3" placeholder="Tulis Pesan Anda Disini"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <div class="btn btn-info">Kirim Pesan</div>
-                    </div>
-                </form>
-            </section>
+            <form action="" class="form-contact" data-aos="fade-right">
+                <div class="mb-3 d-flex flex-column">
+                    <label class="form-label">Nama</label>
+                    <input type="text" id="nama" placeholder="Nama Anda">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label class="form-label">No Hp</label>
+                    <input type="email" id="nomor" placeholder="Nomor aktif/WA">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label class="form-label">Email</label>
+                    <input type="number" id="email" placeholder="nama@example.com">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label class="form-label">Pesan</label>
+                    <textarea id="deskripsi" rows="3" placeholder="Tulis Pesan Anda Disini"></textarea>
+                </div>
+                <div class="mb-3">
+                    <div class="btn btn-info">Kirim Pesan</div>
+                </div>
+            </form>
+
             <section class="cta-call">
                 <h3 data-aos="fade-left">Informasi Kontak</h3>
                 <ul data-aos="fade-left">
@@ -295,7 +296,7 @@
     </div>
 
 </div>
-</div>
+
 
 <footer class="container-fluid">
     <div class="container">

@@ -36,11 +36,11 @@
 <body>
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="{{asset('asset/ADRIANTECH_LOGO2.png')}}" width="250" alt=""></a>
+            <a class="navbar-brand" href="#"><img class="logo" src="{{asset('asset/ADRIANTECH_LOGO2.png')}}" width="250" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav float-end">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>

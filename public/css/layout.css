@@ -18,7 +18,7 @@ html,
     text-decoration: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 body {
@@ -96,7 +96,7 @@ body {
 }
 
 .banner .content .col .cta-bottom-right:hover {
-    
+
     border: 2px solid #0189de;
 }
 
@@ -182,20 +182,23 @@ body {
 }
 
 .keunggulan {
+    overflow: hidden;
     padding: 50px 0;
     background: #00050f;
     /* background: var(--bg-biru); */
     box-shadow: 1px 4px 10px #106ea868;
 }
 
-.keunggulan .container .row{
+.keunggulan .container .row {
     display: flex;
     justify-content: center;
 }
-.keunggulan .container .row .col{
+
+.keunggulan .container .row .col {
     margin: auto;
     justify-content: center;
 }
+
 .keunggulan .container .row .col p {
     font-size: 13px;
     font-family: var(--subfont);
@@ -205,6 +208,7 @@ body {
 
 
 .layanan {
+    overflow: hidden;
     padding-top: 7%;
     /* height: 100vh; */
     /* background: rgb(201, 86, 86); */
@@ -218,7 +222,7 @@ body {
     font-family: var(--subfont);
 }
 
-.row {
+.layanan .row {
     flex-wrap: wrap;
     padding-top: 30px;
 }
@@ -237,13 +241,14 @@ body {
     --line: hsl(240, 9%, 17%);
     --primary: hsl(249, 92%, 58%);
 
+    height: 25rem;
     margin: auto;
     margin-top: 50px;
-    padding-top: 130px;
-    /* position: relative; */
+
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     /* padding: 1rem; */
     width: 19rem;
@@ -288,11 +293,9 @@ body {
 }
 
 
-.layanan .row .gambar {
-    position: absolute;
-    width: 250px;
-    transform: translateX(30%);
-    z-index: 2;
+.layanan .row .card .img-top {
+
+    width: 150px;
 }
 
 .card .btn {
@@ -322,7 +325,7 @@ body {
 
 .portofolio {
     padding-top: 10%;
-    padding-bottom: 50px ;
+    padding-bottom: 50px;
     background: rgb(51, 92, 255);
 
     position: relative;
@@ -405,7 +408,7 @@ body {
     font-size: 14px;
 }
 
-.portofolio .btn-project{
+.portofolio .btn-project {
     background: #1146b0;
     border: none;
     border-radius: 8px;
@@ -413,11 +416,13 @@ body {
     align-self: center;
     transition: .3s ease;
 }
-.portofolio .btn-project:hover{
+
+.portofolio .btn-project:hover {
     /* background: #194fbc; */
     box-shadow: 1px 3px 7px #0000003e;
 }
-.portofolio .btn-project a{
+
+.portofolio .btn-project a {
     text-decoration: none;
     color: #fff;
 }
@@ -473,7 +478,11 @@ body {
     border-bottom: 1px solid #444;
 }
 
-.contact .container h1 {}
+.contact .container h2 {
+    font-family: var(--font-1);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
 
 .contact .container .col {
     display: flex;
@@ -612,4 +621,216 @@ footer section .col li a {
 .about .contact .container {
     display: flex;
     flex-direction: column;
+}
+
+
+/* responvsive */
+
+@media (max-width: 480px) {
+    html{
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        padding: 10px 0;
+        z-index: 99;
+        margin: 0;
+    }
+
+    .navbar-toggler span {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    }
+
+    .navbar .logo {
+        width: 200px;
+    }
+
+    .banner {
+        height: 100vh;
+        background: url(../asset/5084515\ 1.png);
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        /* filter: grayscale(); */
+    }
+
+    .wrapper {
+        width: 100%;
+
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .wrapper h1 {
+
+        font-family: var(--font-1);
+        font-size: 40px;
+    }
+
+    .wrapper p {
+        opacity: 0.4;
+        font-family: var(--subfont);
+        font-size: 16px;
+    }
+
+    .banner .content .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* about */
+    .layout {
+        background: var(--bg-biru);
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        overflow: hidden;
+    }
+
+    .layout .hero2:before {
+        content: '';
+        display: none;
+        background: var(--black);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotate(15deg);
+        width: 200px;
+        height: 700px;
+    }
+
+    .layout .hero {
+        background-image: url('../asset/mockupADRIANTECH.png');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .layout .hero2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+
+    }
+
+    /* keunggulan */
+    .keunggulan .container .row {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    .keunggulan .container .row .col:nth-child(1),
+    .keunggulan .container .row .col:nth-child(3) {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .keunggulan .container .row .col:nth-child(2) {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: end;
+    }
+
+    .keunggulan .container .row .col p {
+        font-size: 8px;
+        font-family: var(--subfont);
+        font-weight: 300;
+        max-width: 300px;
+    }
+
+    /* layanan */
+    .layanan {
+        overflow: hidden;
+        padding-top: 20%;
+        /* height: 100vh; */
+        /* background: rgb(201, 86, 86); */
+    }
+
+    .layanan .row {
+        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+
+    .text-header p {
+        font-family: var(--subfont);
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .col-bottom .service-link {
+        text-decoration: none;
+        color: #106DA8;
+        display: none;
+    }
+
+    .layanan .row .card {
+        height: auto;
+    }
+
+    /* portofolio */
+    .portofolio {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10%;
+        padding-bottom: 50px;
+        background: rgb(51, 92, 255);
+
+        position: relative;
+    }
+
+    .portofolio .container {
+        padding: 2rem 1rem;
+    }
+
+    .portofolio::after {
+        content: '';
+        position: absolute;
+        background: url(../asset/wave-haikei.svg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        top: -10px;
+        left: 0;
+        filter: drop-shadow(0px 20px 10px #1d29ca);
+    }
+
+    .portofolio .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 13px;
+        margin: 3rem auto;
+    }
+
+    /* contact */
+        .contact .container h2{
+            padding: 0 1rem;
+        }
+        .contact .container h2{
+            font-size: 20px;
+
+        }
+   .contact .container .col{
+    flex-direction: column-reverse;
+   }
+
+   .contact .container .col form {
+       width: 100%;
+   }
+
+    
 }
